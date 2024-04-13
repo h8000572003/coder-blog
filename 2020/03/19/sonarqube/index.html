@@ -19,18 +19,29 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://h8000572003.github.io/coder-blog/archives/index.html">
+    <meta name="description" content="簡介SonarQubeSonar是一個用於代碼質量管理的開源平台，用於管理代碼的質量，是一個Web系統，展現了靜態代碼掃描的結果， 通過插件形式可以支持二十幾種語言的代碼質量檢測，通過多個維度的檢查了快速定位代碼中潛在的或者明顯的錯誤；SonarQube 程式碼品質分析工具用 7 個維度來分析程式碼品質，包括：  程式架構　Architecture &amp; Design 冗餘程式　Duplic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SonarQube">
+<meta property="og:url" content="https://h8000572003.github.io/coder-blog/2020/03/19/sonarqube/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="簡介SonarQubeSonar是一個用於代碼質量管理的開源平台，用於管理代碼的質量，是一個Web系統，展現了靜態代碼掃描的結果， 通過插件形式可以支持二十幾種語言的代碼質量檢測，通過多個維度的檢查了快速定位代碼中潛在的或者明顯的錯誤；SonarQube 程式碼品質分析工具用 7 個維度來分析程式碼品質，包括：  程式架構　Architecture &amp; Design 冗餘程式　Duplic">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://h8000572003.github.io/post/sonarqube/index.png">
+<meta property="og:image" content="https://h8000572003.github.io/post/sonarqube/qa.png">
+<meta property="og:image" content="https://h8000572003.github.io/post/sonarqube/step1.png">
+<meta property="og:image" content="https://h8000572003.github.io/post/sonarqube/step2.png">
+<meta property="og:image" content="https://h8000572003.github.io/post/sonarqube/step3.png">
+<meta property="og:image" content="https://h8000572003.github.io/post/sonarqube/step4.png">
+<meta property="article:published_time" content="2020-03-19T04:44:15.000Z">
+<meta property="article:modified_time" content="2024-04-13T13:33:05.805Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://h8000572003.github.io/post/sonarqube/index.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/coder-blog/assets/favicon.ico">
     
-    <title>fi3ework&#39;s Studio</title>
+    <title>SonarQube · fi3ework&#39;s Studio</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -219,6 +230,8 @@
         }
     </script>
     
+        <body class="post-body">
+    
         <!-- header -->
         <header class="header header-mobile">
     <!-- top read progress line -->
@@ -248,6 +261,17 @@
     </div>
     <!-- toggle banner for post layout -->
     
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/coder-blog/">fi3ework&#39;s Studio.</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">SonarQube</a>
+            </div>
+        </div>
+    
 </header>
 
         <!-- fixed footer -->
@@ -274,24 +298,74 @@
 
 
 
+    height:50vh;
+
 ">
     
     <!-- 主页  -->
     
+        
+    <!-- 404页  -->
+    
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/coder-blog/)"></div>
+    <div class="site-intro-img" style="background-image: url(/coder-blog/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+                SonarQube
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+                
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+</div>
+
+                
+                <!-- 文章字数统计 -->
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2020/03/19</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -421,241 +495,118 @@
 
             <img class="loading" src="/coder-blog/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
-                <main class="main index-page">
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/coder-blog/2024/04/13/hell/">
-                
-                <span class="abstract-title-text">hell</span>
-            </a>
-            <div class="abstract-content">
-                
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/04/13</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/coder-blog/2024/04/13/hello-world/">
-                
-                <span class="abstract-title-text">Hello World</span>
-            </a>
-            <div class="abstract-content">
-                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+                <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="簡介SonarQube"><a href="#簡介SonarQube" class="headerlink" title="簡介SonarQube"></a>簡介<a target="_blank" rel="noopener" href="https://www.sonarqube.org/sonarqube-8-2/?gclid=CjwKCAjwsMzzBRACEiwAx4lLG85-5XDD3vBjZ28ebrN9Etr7acj2HG_ZuF_q8bM3KyFUxDu1WSCJXxoC9f0QAvD_BwE">SonarQube</a></h2><p>Sonar是一個用於代碼質量管理的開源平台，用於管理代碼的質量，是一個Web系統，展現了靜態代碼掃描的結果， 通過插件形式可以支持二十幾種語言的代碼質量檢測，通過多個維度的檢查了快速定位代碼中潛在的或者明顯的錯誤；<br>SonarQube 程式碼品質分析工具用 7 個維度來分析程式碼品質，包括：</p>
+<ul>
+<li>程式架構　Architecture &amp; Design</li>
+<li>冗餘程式　Duplications</li>
+<li>單元測試　Unit tests</li>
+<li>複雜度　　Complexity</li>
+<li>潛在問題　Potential bugs</li>
+<li>寫作原則　Coding rules</li>
+<li>註解　　　Comments</li>
+</ul>
+<h2 id="Sonar檢測維度"><a href="#Sonar檢測維度" class="headerlink" title="Sonar檢測維度"></a>Sonar檢測維度</h2><p>Sonar可以從七個維度進行代碼質量檢測，我們可以根據不同維度的嚴重性然後根據我們的經驗做出相應的代碼優化，當然並不是所有維度我們都有必要代碼修改；</p>
+<ul>
+<li>代碼規範<br>Sonar可以通過<a href="/pmd">PMD</a>、<a target="_blank" rel="noopener" href="https://checkstyle.sourceforge.io/">CheckStyle</a>、Findbugs等代碼規則檢測工具來檢測我們代碼是否符合代碼規範；</li>
+<li>潛在的缺陷<br>Sonar可以通過PMD、CheckStyle、Findbugs等代碼規則檢測工具來檢測我們代碼是否有代碼缺陷（比如空指針是否有判斷、IO流是否有關閉等）；</li>
+<li>糟糕的複雜度分佈<br>文件、類、方法等，如果復雜度過高將難以改變，這會使得開發人員難以理解它們 且如果沒有自動化的單元測試，對於程序中的任何組件的改變都將可能導致需要全面的回歸測試</li>
+<li>重複代碼<br>程序中包含大量複製粘貼的代碼是質量低下的，sonar可以展示源碼中重複嚴重的地方</li>
+<li>註釋的檢測<br>沒有註釋將使代碼可讀性變差，特別是當不可避免地出現人員變動時，程序的可讀性將大幅下降而過多的註釋又會使得開發人員將精力過多地花費在閱讀註釋上，亦違背初衷</li>
+<li>單元測試<br>sonar可以很方便地統計並展示單元測試覆蓋率</li>
+<li>糟糕的設計<br>通過sonar可以找出循環，展示包與包、類與類之間相互依賴關係，可以檢測自定義的架構規則通過sonar可以管理第三方的jar包，可以利用LCOM4檢測單個任務規則的應用情況， 檢測耦合。</li>
+</ul>
+<h2 id="介面簡介"><a href="#介面簡介" class="headerlink" title="介面簡介"></a>介面簡介</h2><p><img src="/coder-blog/../post/sonarqube/index.png" alt="首頁"></p>
+<blockquote>
+<p>綠色：功能列</p>
+</blockquote>
+<h2 id="選單"><a href="#選單" class="headerlink" title="選單"></a>選單</h2><ul>
+<li>漏洞、BUG、壞味道數量與趨勢 </li>
+<li>單元測試覆蓋率，重複程式碼比率</li>
+<li>程式數量</li>
+<li>程式狀態</li>
+<li>技術債</li>
+</ul>
+<p> <font color="#dd0000">BUG程式錯誤，漏洞可能被駭客利用部分</font><br /> </p>
+<h2 id="過濾器分類BUG、漏洞與壞味道"><a href="#過濾器分類BUG、漏洞與壞味道" class="headerlink" title="過濾器分類BUG、漏洞與壞味道"></a>過濾器分類BUG、漏洞與壞味道</h2><p>  <img src="/coder-blog/../post/sonarqube/qa.png" alt="問題"></p>
+<blockquote>
+<p> 綠色：條件篩選 紅色：查詢結果</p>
+</blockquote>
+<p>驗證性有五種層級：</p>
+<ul>
+<li>BLOCKER阻斷：影響功能很有可能發生memory leak</li>
+<li>CRITICAL嚴重：Empty catch block, SQL injection</li>
+<li>MAJOR主要：質量缺陷會嚴重影響開發人員的工作效率：未發現代碼段，重複的塊，未使用的參數，</li>
+<li>MINOR次要：質量缺陷可能會稍微影響開發人員的生產力：行不應太長，“ switch”語句應至少包含3種情況，…</li>
+<li>INFO提示：錯誤或質量缺陷都只是發現。</li>
+</ul>
+<p>檢視該弱點，並選擇該項目<br> <img src="/coder-blog/../post/sonarqube/step1.png" alt="warm-item"></p>
+<p>檢視該項項目檢視<br> <img src="/coder-blog/../post/sonarqube/step2.png" alt="view"></p>
+<p>檢視修改方式<br> <img src="/coder-blog/../post/sonarqube/step3.png" alt="way"></p>
+<p>檢視該程式<br>  <img src="/coder-blog/../post/sonarqube/step4.png" alt="all">
+  </p>
 
-More info: Writing
-Run server1$ hexo ...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/04/13</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
+    </article>
+    <!-- license -->
     
-        
-        
-        
-        
+        <div class="license-wrapper">
+            <p>Author：<a href="https://h8000572003.github.io/coder-blog">John Doe</a>
+            <p>Link：<a href="https://h8000572003.github.io/coder-blog/2020/03/19/sonarqube/">https://h8000572003.github.io/coder-blog/2020/03/19/sonarqube/</a>
+            <p>Publish date：<a href="https://h8000572003.github.io/coder-blog/2020/03/19/sonarqube/">March 19th 2020, 12:44:15 pm</a>
+            <p>Update date：<a href="https://h8000572003.github.io/coder-blog/2020/03/19/sonarqube/">April 13th 2024, 9:33:05 pm</a>
+            <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/coder-blog/2020/05/11/gittool/">
-                
-                <span class="abstract-title-text">Gittool</span>
-            </a>
-            <div class="abstract-content">
-                簡介 GIT TOOL功能清單
-提供功能
-建立tag(命名檢核)
-產生changelog
-更新分支
-開發分支合併至sit
-sit分支合併至uat
-uat合併至master
-建立分支
-系統變更單，相關文字複製
-2020.5.15增加自動取號
+                <div class="nextSlogan">Next Post</div>
+                <a href="/coder-blog/2020/03/19/pmd/" title="PMD">
+                    <div class="nextTitle">PMD</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/coder-blog/2020/03/17/findbug/" title="FindBug">
+                    <div class="prevTitle">FindBug</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- comment -->
+    
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
 
 
+            
 
-下載點
+            
 
-            </div>
-            <!-- read more -->
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/11</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/coder-blog/2020/03/24/jmeter/">
-                
-                <span class="abstract-title-text">Jmeter</span>
-            </a>
-            <div class="abstract-content">
-                簡介JMETER
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/24</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/coder-blog/2020/03/19/pmd/">
-                
-                <span class="abstract-title-text">PMD</span>
-            </a>
-            <div class="abstract-content">
-                簡介PMD 是來執行 Java 程式檢測的工具，檢測的對象是原始程式碼。雖然 PMD 看起來像是一個縮寫字，但是作者表示當初採用這個字純粹只是因為這幾個單字念起來很順口。根據網站上面的介紹， PMD 可以找出下列問題：
 
-疑似的臭蟲 (possible bugs)，例如空的 try&#x2F;catch&#x2F;finally&#x2F;switch 描述句。
-無法執行的程式碼  (dead code)，例如未使用的 local 變數、參數、或是 private 函數。
-不良的程式碼 (suboptimal code)，例如效率不良的使用 String&#x2F;StringBuffe...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/19</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/coder-blog/2020/03/19/sonarqube/">
-                
-                <span class="abstract-title-text">SonarQube</span>
-            </a>
-            <div class="abstract-content">
-                簡介SonarQubeSonar是一個用於代碼質量管理的開源平台，用於管理代碼的質量，是一個Web系統，展現了靜態代碼掃描的結果， 通過插件形式可以支持二十幾種語言的代碼質量檢測，通過多個維度的檢查了快速定位代碼中潛在的或者明顯的錯誤；SonarQube 程式碼品質分析工具用 7 個維度來分析程式碼品質，包括：
+            <!-- utteranc评论 -->
 
-程式架構　Architecture &amp; Design
-冗餘程式　Duplications
-單元測試　Unit tests
-複雜度　　Complexity
-潛在問題　Potential bugs
-寫作原則　Coding rules
-註解　　　Comments
 
-Sonar...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/19</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/coder-blog/2020/03/17/findbug/">
-                
-                <span class="abstract-title-text">FindBug</span>
-            </a>
-            <div class="abstract-content">
-                同樣是用來檢測 Java 程式的工具，其檢測的對象是 Byte Code (class 或是 jar 檔)。儘管如此，FindBugs 依舊是屬於靜態分析的方式。FindBugs 如其名，主要是利用 Bug Patterns 的概念，找尋出程式中有問題 (Bugs) 的程式碼 。在其官方的網站中提到 Bug Patterns 的產生可能有下列因素：程式語言本身不容易使用的功能 (Difficult language features)被誤用的 API (Misunderstood API methods)當程式碼在維護時，不變的條件被誤解了 (Misunderstood invarian...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/17</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="JAVA">JAVA</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="程式碼檢測">程式碼檢測</a>
-    
-</div>
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
+
+            
+            
+
+            
+
+        </div>
     
-    <!-- paginator  -->
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
     
 </main>
 
@@ -746,6 +697,23 @@ Sonar...
 
         </div>
         <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B0%A1%E4%BB%8BSonarQube"><span class="toc-number">1.</span> <span class="toc-text">簡介SonarQube</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sonar%E6%AA%A2%E6%B8%AC%E7%B6%AD%E5%BA%A6"><span class="toc-number">2.</span> <span class="toc-text">Sonar檢測維度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E9%9D%A2%E7%B0%A1%E4%BB%8B"><span class="toc-number">3.</span> <span class="toc-text">介面簡介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%81%B8%E5%96%AE"><span class="toc-number">4.</span> <span class="toc-text">選單</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%81%8E%E6%BF%BE%E5%99%A8%E5%88%86%E9%A1%9EBUG%E3%80%81%E6%BC%8F%E6%B4%9E%E8%88%87%E5%A3%9E%E5%91%B3%E9%81%93"><span class="toc-number">5.</span> <span class="toc-text">過濾器分類BUG、漏洞與壞味道</span></a></li></ol>
+            </div>
         
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
@@ -958,6 +926,8 @@ Sonar...
         <!-- CNZZ -->
         
         <!-- async load share.js -->
+        
+            <script src="/coder-blog/scripts/share.js?v=20211217" async></script>
         
         <!-- mermaid -->
         

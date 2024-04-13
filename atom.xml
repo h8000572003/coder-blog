@@ -49,4 +49,88 @@
     
   </entry>
   
+  <entry>
+    <title>Gittool</title>
+    <link href="https://h8000572003.github.io/coder-blog/2020/05/11/gittool/"/>
+    <id>https://h8000572003.github.io/coder-blog/2020/05/11/gittool/</id>
+    <published>2020-05-11T01:04:57.000Z</published>
+    <updated>2024-04-13T13:33:05.804Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="簡介-GIT-TOOL"><a href="#簡介-GIT-TOOL" class="headerlink" title="簡介 GIT TOOL"></a>簡介 GIT TOOL</h2><h3 id="功能清單"><a href="#功能清單" class="headerlink" title="功能清單"></a>功能清單</h3><ul><li>提供功能<ul><li>建立tag(命名檢核)</li><li>產生changelog</li><li>更新分支</li><li>開發分支合併至sit</li><li>sit分支合併至uat</li><li>uat合併至master</li><li>建立分支</li><li>系統變更單，相關文字複製</li><li>2020.5.15增加自動取號</li></ul></li></ul><p><a href="gittool.jar">下載點</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;簡介-GIT-TOOL&quot;&gt;&lt;a href=&quot;#簡介-GIT-TOOL&quot; class=&quot;headerlink&quot; title=&quot;簡介 GIT TOOL&quot;&gt;&lt;/a&gt;簡介 GIT TOOL&lt;/h2&gt;&lt;h3 id=&quot;功能清單&quot;&gt;&lt;a href=&quot;#功能清單&quot; class=&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PMD</title>
+    <link href="https://h8000572003.github.io/coder-blog/2020/03/19/pmd/"/>
+    <id>https://h8000572003.github.io/coder-blog/2020/03/19/pmd/</id>
+    <published>2020-03-19T04:59:39.000Z</published>
+    <updated>2024-04-13T13:33:05.804Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>PMD 是來執行 Java 程式檢測的工具，檢測的對象是原始程式碼。雖然 PMD 看起來像是一個縮寫字，但是作者表示當初採用這個字純粹只是因為這幾個單字念起來很順口。根據網站上面的介紹， PMD 可以找出下列問題：</p><ul><li>疑似的臭蟲 (possible bugs)，例如空的 try&#x2F;catch&#x2F;finally&#x2F;switch 描述句。</li><li>無法執行的程式碼  (dead code)，例如未使用的 local 變數、參數、或是 private 函數。</li><li>不良的程式碼 (suboptimal code)，例如效率不良的使用 String&#x2F;StringBuffer</li><li>過於複雜的語法 (overcomplicated expressions)，例如不必要的 if 描述句，可以用 while 迴圈取代的 for 迴圈。</li><li>重複的程式碼 (duplicated code)，剪貼的程式碼表示臭蟲也被複製了。<br>PMD 本身沒有提供圖形化的介面，而必須透過命令列的方式加以操作。當然在支援 Ant 方面， PMD 是沒有問題的。除此之外，更支援 Maven 1&#x2F;2 的開發環境。而對於多數程式開發人員關心的 IDE 支援度方面，幾乎市面上主要的 IDE 都受其支援。以此看來，要在大多數的開發環境下使用 PMD 幾乎是沒有甚麼門檻。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;PMD 是來執行 Java 程式檢測的工具，檢測的對象是原始程式碼。雖然 PMD 看起來像是一個縮寫字，但是作者表示當初採用這個字純粹只是因</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SonarQube</title>
+    <link href="https://h8000572003.github.io/coder-blog/2020/03/19/sonarqube/"/>
+    <id>https://h8000572003.github.io/coder-blog/2020/03/19/sonarqube/</id>
+    <published>2020-03-19T04:44:15.000Z</published>
+    <updated>2024-04-13T13:33:05.805Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="簡介SonarQube"><a href="#簡介SonarQube" class="headerlink" title="簡介SonarQube"></a>簡介<a href="https://www.sonarqube.org/sonarqube-8-2/?gclid=CjwKCAjwsMzzBRACEiwAx4lLG85-5XDD3vBjZ28ebrN9Etr7acj2HG_ZuF_q8bM3KyFUxDu1WSCJXxoC9f0QAvD_BwE">SonarQube</a></h2><p>Sonar是一個用於代碼質量管理的開源平台，用於管理代碼的質量，是一個Web系統，展現了靜態代碼掃描的結果， 通過插件形式可以支持二十幾種語言的代碼質量檢測，通過多個維度的檢查了快速定位代碼中潛在的或者明顯的錯誤；<br>SonarQube 程式碼品質分析工具用 7 個維度來分析程式碼品質，包括：</p><ul><li>程式架構　Architecture &amp; Design</li><li>冗餘程式　Duplications</li><li>單元測試　Unit tests</li><li>複雜度　　Complexity</li><li>潛在問題　Potential bugs</li><li>寫作原則　Coding rules</li><li>註解　　　Comments</li></ul><h2 id="Sonar檢測維度"><a href="#Sonar檢測維度" class="headerlink" title="Sonar檢測維度"></a>Sonar檢測維度</h2><p>Sonar可以從七個維度進行代碼質量檢測，我們可以根據不同維度的嚴重性然後根據我們的經驗做出相應的代碼優化，當然並不是所有維度我們都有必要代碼修改；</p><ul><li>代碼規範<br>Sonar可以通過<a href="/pmd">PMD</a>、<a href="https://checkstyle.sourceforge.io/">CheckStyle</a>、Findbugs等代碼規則檢測工具來檢測我們代碼是否符合代碼規範；</li><li>潛在的缺陷<br>Sonar可以通過PMD、CheckStyle、Findbugs等代碼規則檢測工具來檢測我們代碼是否有代碼缺陷（比如空指針是否有判斷、IO流是否有關閉等）；</li><li>糟糕的複雜度分佈<br>文件、類、方法等，如果復雜度過高將難以改變，這會使得開發人員難以理解它們 且如果沒有自動化的單元測試，對於程序中的任何組件的改變都將可能導致需要全面的回歸測試</li><li>重複代碼<br>程序中包含大量複製粘貼的代碼是質量低下的，sonar可以展示源碼中重複嚴重的地方</li><li>註釋的檢測<br>沒有註釋將使代碼可讀性變差，特別是當不可避免地出現人員變動時，程序的可讀性將大幅下降而過多的註釋又會使得開發人員將精力過多地花費在閱讀註釋上，亦違背初衷</li><li>單元測試<br>sonar可以很方便地統計並展示單元測試覆蓋率</li><li>糟糕的設計<br>通過sonar可以找出循環，展示包與包、類與類之間相互依賴關係，可以檢測自定義的架構規則通過sonar可以管理第三方的jar包，可以利用LCOM4檢測單個任務規則的應用情況， 檢測耦合。</li></ul><h2 id="介面簡介"><a href="#介面簡介" class="headerlink" title="介面簡介"></a>介面簡介</h2><p><img src="/coder-blog/../post/sonarqube/index.png" alt="首頁"></p><blockquote><p>綠色：功能列</p></blockquote><h2 id="選單"><a href="#選單" class="headerlink" title="選單"></a>選單</h2><ul><li>漏洞、BUG、壞味道數量與趨勢 </li><li>單元測試覆蓋率，重複程式碼比率</li><li>程式數量</li><li>程式狀態</li><li>技術債</li></ul><p> <font color="#dd0000">BUG程式錯誤，漏洞可能被駭客利用部分</font><br /> </p><h2 id="過濾器分類BUG、漏洞與壞味道"><a href="#過濾器分類BUG、漏洞與壞味道" class="headerlink" title="過濾器分類BUG、漏洞與壞味道"></a>過濾器分類BUG、漏洞與壞味道</h2><p>  <img src="/coder-blog/../post/sonarqube/qa.png" alt="問題"></p><blockquote><p> 綠色：條件篩選 紅色：查詢結果</p></blockquote><p>驗證性有五種層級：</p><ul><li>BLOCKER阻斷：影響功能很有可能發生memory leak</li><li>CRITICAL嚴重：Empty catch block, SQL injection</li><li>MAJOR主要：質量缺陷會嚴重影響開發人員的工作效率：未發現代碼段，重複的塊，未使用的參數，</li><li>MINOR次要：質量缺陷可能會稍微影響開發人員的生產力：行不應太長，“ switch”語句應至少包含3種情況，…</li><li>INFO提示：錯誤或質量缺陷都只是發現。</li></ul><p>檢視該弱點，並選擇該項目<br> <img src="/coder-blog/../post/sonarqube/step1.png" alt="warm-item"></p><p>檢視該項項目檢視<br> <img src="/coder-blog/../post/sonarqube/step2.png" alt="view"></p><p>檢視修改方式<br> <img src="/coder-blog/../post/sonarqube/step3.png" alt="way"></p><p>檢視該程式<br>  <img src="/coder-blog/../post/sonarqube/step4.png" alt="all">  </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;簡介SonarQube&quot;&gt;&lt;a href=&quot;#簡介SonarQube&quot; class=&quot;headerlink&quot; title=&quot;簡介SonarQube&quot;&gt;&lt;/a&gt;簡介&lt;a href=&quot;https://www.sonarqube.org/sonarqube-8-2/?g</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FindBug</title>
+    <link href="https://h8000572003.github.io/coder-blog/2020/03/17/findbug/"/>
+    <id>https://h8000572003.github.io/coder-blog/2020/03/17/findbug/</id>
+    <published>2020-03-17T07:14:02.000Z</published>
+    <updated>2024-04-13T13:33:05.804Z</updated>
+    
+    <content type="html"><![CDATA[<p>同樣是用來檢測 Java 程式的工具，其檢測的對象是 Byte Code (class 或是 jar 檔)。儘管如此，FindBugs 依舊是屬於靜態分析的方式。FindBugs 如其名，主要是利用 Bug Patterns 的概念，找尋出程式中有問題 (Bugs) 的程式碼 。在其官方的網站中提到 Bug Patterns 的產生可能有下列因素：<br>程式語言本身不容易使用的功能 (Difficult language features)<br>被誤用的 API (Misunderstood API methods)<br>當程式碼在維護時，不變的條件被誤解了 (Misunderstood invariants when code is modified during maintenance)<br>其他常見的錯誤，例如打錯字、或是使用了錯誤的布林運算元 (Garden varieity mistakes: typos, use of the wrong boolean operator)<br>FindBugs 本身提供完整的 GUI 介面，讓使用者可以很方便地進行檢測的工作。因為 FindBugs 主要使用 Java 進行開發，所以可以運行於各種的作業系統上。雖然 FindBugs 是針對 ByteCode 進行掃描，但是在 GUI 中我們可以指定原始程式碼所在的目錄。如此一來， FindBugs 就會自動將發現問題的 ByteCode 與原始程式碼自動連結並加以顯示。<br>eclipse plus</p><pre><code>http://findbugs.cs.umd.edu/eclipse</code></pre><p><img src="/coder-blog/static/pic/menu.jpg" alt="PIC"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;同樣是用來檢測 Java 程式的工具，其檢測的對象是 Byte Code (class 或是 jar 檔)。儘管如此，FindBugs 依舊是屬於靜態分析的方式。FindBugs 如其名，主要是利用 Bug Patterns 的概念，找尋出程式中有問題 (Bugs) 的程式</summary>
+      
+    
+    
+    
+    
+    <category term="JAVA" scheme="https://h8000572003.github.io/coder-blog/tags/JAVA/"/>
+    
+    <category term="程式碼檢測" scheme="https://h8000572003.github.io/coder-blog/tags/%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%AA%A2%E6%B8%AC/"/>
+    
+  </entry>
+  
 </feed>
