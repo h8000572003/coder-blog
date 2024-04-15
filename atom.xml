@@ -6,7 +6,7 @@
   <link href="https://h8000572003.github.io/coder-blog/atom.xml" rel="self"/>
   
   <link href="https://h8000572003.github.io/coder-blog/"/>
-  <updated>2024-04-13T10:19:26.354Z</updated>
+  <updated>2024-04-15T15:32:10.447Z</updated>
   <id>https://h8000572003.github.io/coder-blog/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>idea plugins:values</title>
+    <link href="https://h8000572003.github.io/coder-blog/2024/04/15/idea-plugins-values/"/>
+    <id>https://h8000572003.github.io/coder-blog/2024/04/15/idea-plugins-values/</id>
+    <published>2024-04-15T15:14:26.000Z</published>
+    <updated>2024-04-15T15:32:10.447Z</updated>
+    
+    <content type="html"><![CDATA[<p>連結點<a href="https://plugins.jetbrains.com/plugin/22435-values">查看</a></p><p>該外掛主要目的為降低日常開發常須要的重複性程式碼之低級錯誤</p><ol><li>製作測試個案時，常常需要對物件塞入資料（Generate all setters cache name<br>values）：選擇變數位置可將欄位名稱當資料塞入，將地重複性作業，非文字時根據欄位名稱產生出index，採快取機制</li><li>製作測試個案時，常常需要對物件塞入資料（Generate all setters no cache<br>values）：選擇變數位置可將欄位名稱當資料塞入，將地重複性作業，非文字時根據欄位名稱產生出index</li><li>製作個案時，常常須兩個物件比對（Generate all setters cache name values）：製作有個method包含兩個參數，將進行兩個物件之assert比對</li><li>兩個物件產生mapper對照（Generated set&#x2F;get based on parameter 1 as parameter 2）：根據第一筆資料塞入</li><li>透過介面產生對應欄位屬性（Generate fields by get&#x2F;is method name）：於介面內使用、</li><li>SQL INJECTION 文字拆分，字串與不宣告參數（Generate fix sql injection related without declare parameters）：選擇文字參數將產生文字與不宣告參數組合</li><li>SQL INJECTION 文字拆分，字串與宣告參數（Generate fix sql injection related declare parameters）：選擇文字參數將產生文字與宣告參數組合</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;連結點&lt;a href=&quot;https://plugins.jetbrains.com/plugin/22435-values&quot;&gt;查看&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;該外掛主要目的為降低日常開發常須要的重複性程式碼之低級錯誤&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;製作測試個案時，常常需要對物件塞入</summary>
+      
+    
+    
+    
+    
+    <category term="idea" scheme="https://h8000572003.github.io/coder-blog/tags/idea/"/>
+    
+    <category term="plugins" scheme="https://h8000572003.github.io/coder-blog/tags/plugins/"/>
+    
+  </entry>
   
   <entry>
     <title>hell</title>
